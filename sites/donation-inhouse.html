@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spenden - KleiderWende e.V.</title>
+    <link rel="icon" href="../resources/icons8-kreisel-60.png" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-lg">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="../index.html"><img src="../resources/icons8-kreisel-60.png" alt="Logo" width="60"
+                    height="60" class="d-inline-block align-text-top m-1 me-lg-3"></a>
+            <a class="navbar-brand" href="..//index.html">KleiderWende e.V.</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto my-2 my-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Startseite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="donation.html">Spenden</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Über Uns</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-lg">
+        <br>
+        <h2>Spende Anmelden</h2>
+
+        <form class="g-3" action="submit-donation.html">
+            <input type="hidden" name="inhouse" id="inhouse" value="on">
+            <div class="row my-3">
+                <p class="fs-4">Für welchen Zweck spenden Sie?</p>
+                <div class="col-6 col-sm-3 mb-2">
+                    <input type="radio" class="btn-check" name="destination" id="destination1" value="Türkei Erdbeben"
+                        >
+                    <label class="card btn btn-outline-primary p-0 text-center" for="destination1">
+                        <img src="../resources/caglar-oskay-eW3n6lXmixw-unsplash.webp" class="card-img-top" alt="">
+                        <span class="card-body">Türkei Erdbeben</span>
+                    </label>
+                </div>
+                <div class="col-6 col-sm-3 mb-2">
+                    <input type="radio" class="btn-check" name="destination" id="destination2" value="Polen Hochwasser"
+                        >
+                    <label class="card btn btn-outline-primary p-0 text-center" for="destination2">
+                        <img src="../resources/chris-gallagher-pZiAMAuFzvs-unsplash.webp" class="card-img-top" alt="">
+                        <span class="card-body">Polen Hochwasser</span>
+                    </label>
+                </div>
+                <div class="col-6 col-sm-3 mb-2">
+                    <input type="radio" class="btn-check" name="destination" id="destination3" value="Ukraine Krieg"
+                        >
+                    <label class="card btn btn-outline-primary p-0 text-center" for="destination3">
+                        <img src="../resources/clay-banks-maniiOaos7A-unsplash.webp" class="card-img-top" alt="">
+                        <span class="card-body">Ukraine Krieg</span>
+                    </label>
+                </div>
+                <div class="col-6 col-sm-3 mb-2">
+                    <input type="radio" class="btn-check" name="destination" id="destination4" value="Armut vor Ort"
+                        >
+                    <label class="card btn btn-outline-primary p-0 text-center" for="destination4">
+                        <img src="../resources/jon-tyson-1SzNTou5buY-unsplash.webp" class="card-img-top" alt="">
+                        <span class="card-body">Armut vor Ort</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <p class="fs-4">Welche Kleidung spenden Sie? (Mehrfachauswahl möglich)</p>
+                <div class="col-6 col-sm-3 mb-2 d-flex">
+                    <input type="checkbox" class="btn-check" name="everyday" id="everyday">
+                    <label
+                        class="card btn btn-outline-primary w-100 h-100 d-flex align-items-center justify-content-center text-center"
+                        for="everyday" style="min-height: 4em;">Oberteile & Hosen</label>
+                </div>
+                <div class="col-6 col-sm-3 mb-2 d-flex">
+                    <input type="checkbox" class="btn-check" name="outerwear" id="outerwear">
+                    <label
+                        class="card btn btn-outline-primary w-100 h-100 d-flex align-items-center justify-content-center text-center"
+                        for="outerwear" style="min-height: 4em;">Jacken & Mäntel</label>
+                </div>
+                <div class="col-6 col-sm-3 mb-2 d-flex">
+                    <input type="checkbox" class="btn-check" name="shoes" id="shoes">
+                    <label
+                        class="card btn btn-outline-primary w-100 h-100 d-flex align-items-center justify-content-center text-center"
+                        for="shoes" style="min-height: 4em;">Schuhe</label>
+                </div>
+                <div class="col-6 col-sm-3 mb-2 d-flex">
+                    <input type="checkbox" class="btn-check" name="accessoires" id="accessoires">
+                    <label
+                        class="card btn btn-outline-primary w-100 h-100 d-flex align-items-center justify-content-center text-center"
+                        for="accessoires" style="min-height: 4em;">Mützen, Schals, Handschuhe</label>
+                </div>
+            </div>
+
+            <div class="row my-3">
+                <p class="fs-4">Für wen ist die Kleidung geeignet? (Mehrfachauswahl möglich)</p>
+                <div class="col-6 col-sm-4 mb-2 d-flex">
+                    <input type="checkbox" class="btn-check" name="baby" id="baby">
+                    <label
+                        class="card btn btn-outline-primary w-100 h-100 d-flex align-items-center justify-content-center text-center"
+                        for="baby" style="min-height: 4em;">Babys</label>
+                </div>
+                <div class="col-6 col-sm-4 mb-2 d-flex">
+                    <input type="checkbox" class="btn-check" name="child" id="child">
+                    <label
+                        class="card btn btn-outline-primary w-100 h-100 d-flex align-items-center justify-content-center text-center"
+                        for="child" style="min-height: 4em;">Kinder</label>
+                </div>
+                <div class="col-12 col-sm-4 mb-2 d-flex">
+                    <input type="checkbox" class="btn-check" name="adult" id="adult">
+                    <label
+                        class="card btn btn-outline-primary w-100 h-100 d-flex align-items-center justify-content-center text-center"
+                        for="adult" style="min-height: 4em;">Erwachsene</label>
+                </div>
+            </div>
+
+            <div class="col-12 col-xl-1">
+                <button type="submit" class="btn btn-success my-3 w-100"
+                    style="min-height: 4em; min-width: 8em;">Weiter</button>
+            </div>
+        </form>
+        <br>
+    </main>
+
+    <footer class="navbar bg-body-tertiary">
+        <div class="container d-flex justify-content-center">
+            <ul class="navbar-nav flex-column flex-sm-row text-center">
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="data.html">Datenschutz</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" href="legal.html">Impressum</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3" target="_blank"
+                        href="https://icons8.com/icon/UCs8JTCyZwqg/roundabout">Kreisel-Icon(icons8.com)</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
